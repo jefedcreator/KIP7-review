@@ -1,9 +1,11 @@
-#**klaytn 17 contract review**
+**klaytn 17 contract review**
+=
 
 klaytn is a public blockchain focused on the metaverse, gamefi and the creator economy.
 klaytn compatible token (KCT) is a special type of smart contract that implements certain technical specifications. Everyone who wants to issue tokens on top of Klaytn must follow the specification. Token standards are defined in Klaytn such as KIP-7 and KIP-17. KIP-7 and KIP-17 are tailored for klaytn and are suitable on the klaytn ecosystem.
 
-##We will be focused on the KIP17 Non-fungible Token standard  specification in this review.
+<h1>We will be focused on the KIP17 Non-fungible Token standard  specification in this review.</h1>
+
 
 Non-fungible token (NFT) is a special type of token that represents a unique asset. As the name non-fungible implies, every single token is unique and non-divisible. This uniqueness of non-fungible token opens up new horizons of asset digitization. For example, it can be used to represent digital art, game items, or any kind of unique assets and allow people to trade them.
 KIP-17 differs from ERC-721 in the sense that Every token transfer/mint/burn must be tracked with event logs. 
