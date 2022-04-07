@@ -17,11 +17,14 @@ The KIP17 Contract imports IKPI17 interface, IERC721Receiverinterface, SafeMaths
 KIP17 inherits KIP13 and IKIP17 contracts, using using SafeMath Library for uint256, using Address library for address and using Counters library for Counters.Counter;
 
 KIP17 uses byte4 function selectors to interact with both the onKIP17Received and onERC721Received function on the onERC721Receiver and onKIP17Received contracts respectively.
-![](C:\Users\HP\Documents\Development\KIP17\code2.png)
+![code2](https://user-images.githubusercontent.com/72661662/162277663-42752309-634c-40e6-be2d-3215eae1637a.png)
+
 
 the KIP17 has a total of four mappings. 
 _tokenOwner mapping of uint256 tokenID to 
 address owner, _tokenApprovals mapping of uint256 tokenID to address approved addresses, _ownedTokensCount mapping of address owner to number of owned token, and _operatorApprovals 2 dimentional mapping of address owner to address operator and returns a boolean.
+![code3](https://user-images.githubusercontent.com/72661662/162277720-d549125c-2b1b-4cee-85e1-03f8d6bd53fa.png)
+
 
 Each function in the IKIP17 interface has a unique byte4 selector that is generated from the keccak256 has of the function name and its arguments. The KIP17 contract is a summation of all the function selectors, 0x80ac58cd.
 
