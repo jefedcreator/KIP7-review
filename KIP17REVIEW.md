@@ -106,7 +106,7 @@ function _burn is an internal function that takes a single parameter of uint256 
 
 
 
-**_checkOnKIP17Received** function takes in three parameters and returns a boolean
+**_checkOnKIP17Received** is an internal function takes in three parameters, an address from, an address to, a tokenId, bytes _data, and returns a boolean. the function contains two local variables, bool success and bytes memory returndata. the function returns true if to address is not contract address. the function performs a low level call to the 'to' address using abi.encodeWithSelector the function selector of the onERC721Received function inside the IERC721Receiver contract, together with the function arguments. this call returns a true if succesful and a return data. the function assertains if the return data is successful by checking if its greater than 0. and  if the decoded value is same as the the function selector.
 
 ![code20](https://user-images.githubusercontent.com/72661662/162278592-cfb31563-d67a-47cc-b320-b3bc55778030.png)
 
